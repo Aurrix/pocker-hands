@@ -17,11 +17,11 @@ class StraightTest {
         Straight straight = new Straight();
         assertTrue(straight.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Three),
-                        new Card(Suit.Diamond, Value.Four),
-                        new Card(Suit.Heart, Value.Five),
-                        new Card(Suit.Diamond, Value.Six)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.THREE),
+                        new Card(Suit.DIAMOND, Value.FOUR),
+                        new Card(Suit.HEART, Value.FIVE),
+                        new Card(Suit.DIAMOND, Value.SIX)
                 ))));
     }
 
@@ -30,11 +30,11 @@ class StraightTest {
         Straight straight = new Straight();
         assertFalse(straight.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Ace),
-                        new Card(Suit.Heart, Value.Two),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.ACE),
+                        new Card(Suit.HEART, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 }

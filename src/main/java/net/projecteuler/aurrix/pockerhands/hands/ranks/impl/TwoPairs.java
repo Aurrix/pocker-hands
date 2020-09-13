@@ -5,9 +5,6 @@ import net.projecteuler.aurrix.pockerhands.hands.cards.Card;
 import net.projecteuler.aurrix.pockerhands.hands.ranks.Rank;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Service
 public class TwoPairs implements Rank {
 

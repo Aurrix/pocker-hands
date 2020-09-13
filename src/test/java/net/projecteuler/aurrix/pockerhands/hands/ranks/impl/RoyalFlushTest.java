@@ -16,11 +16,11 @@ class RoyalFlushTest {
         RoyalFlush royalFlush = new RoyalFlush(new Flush());
         assertTrue(royalFlush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Ten),
-                        new Card(Suit.Club, Value.Jack),
-                        new Card(Suit.Club, Value.Queen),
-                        new Card(Suit.Club, Value.King),
-                        new Card(Suit.Club, Value.Ace)
+                        new Card(Suit.CLUB, Value.TEN),
+                        new Card(Suit.CLUB, Value.JACK),
+                        new Card(Suit.CLUB, Value.QUEEN),
+                        new Card(Suit.CLUB, Value.KING),
+                        new Card(Suit.CLUB, Value.ACE)
                 ))));
     }
 
@@ -29,11 +29,11 @@ class RoyalFlushTest {
         RoyalFlush royalFlush = new RoyalFlush(new Flush());
         assertFalse(royalFlush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Nine),
-                        new Card(Suit.Club, Value.Ten),
-                        new Card(Suit.Club, Value.Jack),
-                        new Card(Suit.Club, Value.Queen),
-                        new Card(Suit.Club, Value.King)
+                        new Card(Suit.CLUB, Value.NINE),
+                        new Card(Suit.CLUB, Value.TEN),
+                        new Card(Suit.CLUB, Value.JACK),
+                        new Card(Suit.CLUB, Value.QUEEN),
+                        new Card(Suit.CLUB, Value.KING)
                 ))));
     }
 }

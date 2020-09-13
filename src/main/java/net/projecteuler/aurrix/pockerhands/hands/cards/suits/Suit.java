@@ -1,14 +1,14 @@
 package net.projecteuler.aurrix.pockerhands.hands.cards.suits;
 
 public enum Suit {
-    Diamond("D"),
-    Club("C"),
-    Heart("H"),
-    Spade("S");
+    DIAMOND("D"),
+    CLUB("C"),
+    HEART("H"),
+    SPADE("S");
 
     public String letter;
 
-    private Suit (String letter){
+    Suit (String letter){
         this.letter = letter;
     }
 }

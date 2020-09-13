@@ -5,9 +5,6 @@ import net.projecteuler.aurrix.pockerhands.hands.cards.Card;
 import net.projecteuler.aurrix.pockerhands.hands.ranks.Rank;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Service
 public class ThreeOfKind implements Rank {
 
@@ -44,14 +41,6 @@ public class ThreeOfKind implements Rank {
         return 7;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        if (o instanceof Rank) {
-            Rank rank = (Rank) o;
-            return rank.getRuleOrder() < getRuleOrder() ? 1 : -1;
-        }
-        return 0;
-    }
     @Override
     public String getName() {
         return NAME;

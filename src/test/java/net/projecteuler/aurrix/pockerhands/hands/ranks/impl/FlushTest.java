@@ -16,11 +16,11 @@ class FlushTest {
         Flush flush = new Flush();
         assertTrue(flush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Club, Value.Eight),
-                        new Card(Suit.Club, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.CLUB, Value.EIGHT),
+                        new Card(Suit.CLUB, Value.EIGHT)
                 ))));
     }
 
@@ -29,11 +29,11 @@ class FlushTest {
         Flush flush = new Flush();
         assertFalse(flush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Ace),
-                        new Card(Suit.Heart, Value.Two),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.ACE),
+                        new Card(Suit.HEART, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 }

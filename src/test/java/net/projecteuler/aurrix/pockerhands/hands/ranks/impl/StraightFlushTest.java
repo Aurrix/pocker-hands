@@ -16,11 +16,11 @@ class StraightFlushTest {
         StraightFlush straightFlush = new StraightFlush();
         assertTrue(straightFlush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Diamond, Value.Two),
-                        new Card(Suit.Diamond, Value.Three),
-                        new Card(Suit.Diamond, Value.Four),
-                        new Card(Suit.Diamond, Value.Five),
-                        new Card(Suit.Diamond, Value.Six)
+                        new Card(Suit.DIAMOND, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.THREE),
+                        new Card(Suit.DIAMOND, Value.FOUR),
+                        new Card(Suit.DIAMOND, Value.FIVE),
+                        new Card(Suit.DIAMOND, Value.SIX)
                 ))));
     }
 
@@ -29,11 +29,11 @@ class StraightFlushTest {
         StraightFlush straightFlush = new StraightFlush();
         assertFalse(straightFlush.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Heart, Value.Nine),
-                        new Card(Suit.Heart, Value.Ten),
-                        new Card(Suit.Heart, Value.Jack),
-                        new Card(Suit.Heart, Value.Queen),
-                        new Card(Suit.Diamond, Value.King)
+                        new Card(Suit.HEART, Value.NINE),
+                        new Card(Suit.HEART, Value.TEN),
+                        new Card(Suit.HEART, Value.JACK),
+                        new Card(Suit.HEART, Value.QUEEN),
+                        new Card(Suit.DIAMOND, Value.KING)
                 ))));
     }
 }

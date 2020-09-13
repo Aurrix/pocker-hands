@@ -19,6 +19,19 @@ public class Card implements Comparable<Card> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (o instanceof Card) {
+            Card card = (Card) o;
+            return card.getValue().value == this.getValue().value && card.suit.letter.equals(this.suit.letter);
+        } else return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.suit.letter.hashCode() + this.value.value;
+    }
+
+    @Override
     public int compareTo(Card card) {
         return this.value.value - card.value.value;
     }

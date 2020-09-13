@@ -5,7 +5,6 @@ import net.projecteuler.aurrix.pockerhands.hands.cards.Card;
 import net.projecteuler.aurrix.pockerhands.hands.cards.services.RankingService;
 import net.projecteuler.aurrix.pockerhands.hands.cards.suits.Suit;
 import net.projecteuler.aurrix.pockerhands.hands.cards.value.Value;
-import net.projecteuler.aurrix.pockerhands.hands.ranks.Rank;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

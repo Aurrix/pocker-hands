@@ -16,11 +16,11 @@ class FourOfAKindTest {
         FourOfAKind fourOfAKind = new FourOfAKind();
         assertTrue(fourOfAKind.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Diamond, Value.Two),
-                        new Card(Suit.Heart, Value.Two),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.TWO),
+                        new Card(Suit.HEART, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 
@@ -29,11 +29,11 @@ class FourOfAKindTest {
         FourOfAKind fourOfAKind = new FourOfAKind();
         assertFalse(fourOfAKind.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Two),
-                        new Card(Suit.Heart, Value.Ace),
-                        new Card(Suit.Diamond, Value.Five)
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.TWO),
+                        new Card(Suit.HEART, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.FIVE)
                 ))));
     }
 }

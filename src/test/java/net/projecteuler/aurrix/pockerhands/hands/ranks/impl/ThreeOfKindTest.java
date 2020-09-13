@@ -16,11 +16,11 @@ class ThreeOfKindTest {
         ThreeOfKind threeOfKind = new ThreeOfKind();
         assertTrue(threeOfKind.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Eight),
-                        new Card(Suit.Heart, Value.Eight),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.EIGHT),
+                        new Card(Suit.HEART, Value.EIGHT),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 
@@ -29,11 +29,11 @@ class ThreeOfKindTest {
         ThreeOfKind threeOfKind = new ThreeOfKind();
         assertFalse(threeOfKind.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Ace),
-                        new Card(Suit.Heart, Value.Two),
-                        new Card(Suit.Diamond, Value.Five)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.ACE),
+                        new Card(Suit.HEART, Value.TWO),
+                        new Card(Suit.DIAMOND, Value.FIVE)
                 ))));
     }
 }

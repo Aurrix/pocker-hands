@@ -13,13 +13,13 @@ public class StraightFlush implements Rank {
     @Override
     public boolean checks(Hand hand) {
         Rank.super.sortCardsByValue(hand);
-        if (hand.getCards().size()!=5) return false;
+        if (hand.getCards().size() != 5) return false;
         boolean consecutive = true;
         int previous = 0;
         String suit = "";
         for (Card card : hand.getCards()) {
             if ((previous != 0 && card.getValue().value != ++previous) || (!suit.equals(card.getSuit().letter) && !suit.isEmpty()))
-            consecutive = false;
+                consecutive = false;
             if (previous == 0) previous = card.getValue().value;
             if (suit.isEmpty()) suit = card.getSuit().letter;
 
@@ -39,15 +39,6 @@ public class StraightFlush implements Rank {
     @Override
     public int getRuleOrder() {
         return 2;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        if (o instanceof Rank) {
-            Rank rank = (Rank) o;
-            return rank.getRuleOrder() < getRuleOrder() ? 1 : -1;
-        }
-        return 0;
     }
 
     @Override

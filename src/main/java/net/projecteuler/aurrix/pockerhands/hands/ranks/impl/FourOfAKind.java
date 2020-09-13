@@ -5,9 +5,6 @@ import net.projecteuler.aurrix.pockerhands.hands.cards.Card;
 import net.projecteuler.aurrix.pockerhands.hands.ranks.Rank;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Service
 public class FourOfAKind implements Rank {
 

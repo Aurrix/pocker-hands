@@ -18,11 +18,11 @@ public class OnePairTest {
         OnePair onePair = new OnePair();
         assertTrue(onePair.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Ace),
-                        new Card(Suit.Diamond, Value.Ace),
-                        new Card(Suit.Heart, Value.Three),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.ACE),
+                        new Card(Suit.DIAMOND, Value.ACE),
+                        new Card(Suit.HEART, Value.THREE),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 
@@ -31,11 +31,11 @@ public class OnePairTest {
         OnePair onePair = new OnePair();
         assertFalse(onePair.checks(
                 new Hand(Arrays.asList(
-                        new Card(Suit.Club, Value.Two),
-                        new Card(Suit.Club, Value.Queen),
-                        new Card(Suit.Diamond, Value.Ace),
-                        new Card(Suit.Heart, Value.Three),
-                        new Card(Suit.Diamond, Value.Eight)
+                        new Card(Suit.CLUB, Value.TWO),
+                        new Card(Suit.CLUB, Value.QUEEN),
+                        new Card(Suit.DIAMOND, Value.ACE),
+                        new Card(Suit.HEART, Value.THREE),
+                        new Card(Suit.DIAMOND, Value.EIGHT)
                 ))));
     }
 
